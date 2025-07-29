@@ -73,7 +73,7 @@ app.post('/bfhl', (req, res) => {
             concat_string: concat_string
         };
 
-        return res.status(200).json(response); [span_2](start_span)
+        return res.status(200).json(response); 
 
     } catch (error) {
         return res.status(500).json({
@@ -84,7 +84,7 @@ app.post('/bfhl', (req, res) => {
     }
 });
 
-const PORT = process.env.PORT || 3000;
+const PORT = 3000;
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
